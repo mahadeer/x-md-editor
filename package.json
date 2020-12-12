@@ -1,0 +1,21 @@
+{
+  "name": "x-md-editor",
+  "version": "1.0.0",
+  "description": "Markdown Editor written in RUST",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd md-editor && npm start",
+    "build:core": "cd md-parser && wasm-pack build --out-dir ../parser_module",
+    "build:web": "cd md-editor && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahadeer/x-md-editor.git"
+  },
+  "author": "Mahadeer Mohamed <mahadeer2010@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahadeer/x-md-editor/issues"
+  },
+  "homepage": "https://github.com/mahadeer/x-md-editor#readme"
+}
