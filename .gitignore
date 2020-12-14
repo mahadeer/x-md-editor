@@ -2,3 +2,4 @@ md-parser/target
 parser_module
 
 md-editor/node_modules
+md-editor/dist

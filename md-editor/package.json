@@ -10,14 +10,21 @@
     "start": "webpack-dev-server"
   },
   "dependencies": {
-    "md-parser": "file:../parser_module"
+    "md-parser": "file:../parser_module",
+    "postcss": "^8.2.1",
+    "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
+    "autoprefixer": "^10.1.0",
+    "copy-webpack-plugin": "^5.0.0",
+    "css-loader": "^5.0.1",
     "hello-wasm-pack": "^0.1.0",
+    "mini-css-extract-plugin": "^1.3.3",
+    "postcss-loader": "^4.1.0",
+    "style-loader": "^2.0.0",
     "webpack": "^4.29.3",
     "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5",
-    "copy-webpack-plugin": "^5.0.0"
+    "webpack-dev-server": "^3.1.5"
   },
   "author": "Mahadeer Mohamed <mahadeer2010@gmail.com>",
   "license": "ISC"

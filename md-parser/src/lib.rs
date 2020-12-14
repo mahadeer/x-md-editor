@@ -16,6 +16,13 @@ extern "C" {
 }
 
 #[wasm_bindgen]
-pub fn greet() {
-    log("Hello, wasm-template-rust!");
+pub fn parse(message: &str) -> String {
+    r#"
+    #H1 header
+##H2 header
+###H3 header
+####H4 header
+#####H5 header
+######H6 header
+    "#.into()
 }

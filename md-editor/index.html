@@ -1,15 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class='h-full'>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>X Markdown Editor</title>
     <link href="./assets/favicon.ico" rel="favicon" />
+    <link href="./assets/font-awesome/all.min.css" rel="stylesheet" type="text/css" />
+    <!-- <link rel="stylesheet" href="./assets/codemirror/codemirror.css"> -->
 </head>
 
-<body>
+<body class="antialiased font-body bg-body text-body flex flex-col h-full" style="opacity: 0">
+    <nav class="flex justify-center p-4 border-b border-grey pin-t">
+        <a class="text-xl text-indigo-600 font-semibold font-heading" href="#">
+            X Markdown Editor
+        </a>
+    </nav>
+    <div id="markdown-container" class="h-full border border-grey">
+        <section id="toolbar" class="px-4 py-1 text-center border-b border-grey grid gap-2 text-xl align-middle">
+        </section>
+        <section class="p-2 grid grid-cols-2 gap-1">
+            <div class="px-2 border border-grey">
+                <textarea id="text-editor" resize="none" class="focus:outline-none w-full h-full"></textarea>
+            </div>
+            <div id="html-content" class="px-2 border border-grey"></div>
+        </section>
+    </div>
+    <footer id="footer" class="bg-white border-t border-grey p-4 pin-b">
+        <div class="w-full mx-auto flex flex-wrap">
+            <div class="flex w-1/2 text-left">
+                © 2020 Mahadeer Mohamed
+            </div>
+            <div id="social-icons" class="text-indigo-600 text-xl flex w-1/2 justify-end text-right space-x-6">
+                <a title="Message me" href="mailto:mahadeer2010@gmail.com?subject=Hello" class="hover:text-black">
+                    <i class="far fa-envelope"></i>
+                </a>
+                <a title="View on Github" target="_blank" href="https://github.com/mahadeer/x-md-editor"
+                    class="hover:text-black">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a title="Share" href="#" id="share-button" class="hover:text-black"><i
+                        class="far fa-share-square"></i></a>
+            </div>
+        </div>
+    </footer>
     <script src="./bootstrap.js"></script>
+    <!-- <script src="./assets/codemirror/codemirror.js"></script> -->
     <noscript>This page contains webassembly and javascript content, please enable javascript in your
         browser.</noscript>
 </body>
